@@ -1,0 +1,8 @@
+{
+  "watch": ["src", "config", ".env"],
+  "ext": "ts,json",
+  "ignore": ["src/**/*.spec.ts"],
+  "execMap": {
+    "ts": "ts-node --swc -r tsconfig-paths/register"
+  }
+}

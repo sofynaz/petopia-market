@@ -1,0 +1,28 @@
+{
+  "name": "@repo/logger",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "dist/**"
+  ],
+  "main": "./dist/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "dev": "tsc -w",
+    "lint": "eslint \"src/**/*.ts*\" --max-warnings 0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/tsconfig": "*",
+    "eslint": "^8.57.0",
+    "rimraf": "^5.0.5",
+    "chalk": "4.1.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "winston": "^3.13.0"
+  }
+}

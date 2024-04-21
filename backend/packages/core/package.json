@@ -1,0 +1,33 @@
+{
+  "name": "@repo/core",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "dist/**"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "dev": "tsc -w",
+    "lint": "eslint \"src/**/*.ts*\" --max-warnings 0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/tsconfig": "*",
+    "@types/ejs": "^3.1.5",
+    "@types/lodash": "^4.17.0",
+    "eslint": "^8.57.0",
+    "http-status": "^1.7.4",
+    "lodash": "^4.17.21",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3",
+    "zod": "^3.22.4"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10"
+  }
+}
