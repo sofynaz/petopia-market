@@ -1,10 +1,6 @@
 ### Petopiya Market
 
----
-
 **Discription**: Your ultimate online destination for all things pet-related. Adopt a new furry friend, shop top-notch products, and access valuable pet care resources, all in one convenient place. We prioritize reputable sellers and adoption centers, offering informative blogs and a diverse range of pet products to ensure your pets get the love and attention they deserve.
-
----
 
 **Features**
 1. **Pet Care Product Listings:** Explore an extensive selection of pets sourced from reputable sellers and adoption centers. From playful puppies to cuddly kittens, and everything in between, find your perfect companion. Additionally, browse through a diverse array of high-quality pet products, including nutritious food, engaging toys, stylish accessories, and more to cater to all your pet's needs.
@@ -24,5 +20,4 @@
 8. **Search and Filter Options:** Easily navigate through our vast inventory of pets, products, and blog posts with our advanced search and filter functionalities. Refine your search based on specific criteria such as species, breed, age, price range, and more, ensuring you find exactly what you're looking for with ease.
 
 ---
-
 Thank-you
