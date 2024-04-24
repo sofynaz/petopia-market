@@ -16,7 +16,8 @@
     "preserveWatchOutput": true,
     "skipLibCheck": true,
     "strict": true,
-    "removeComments": true
+    "removeComments": true,
+    "allowJs": true
   },
   "exclude": ["node_modules"]
 }

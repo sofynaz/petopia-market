@@ -3,11 +3,11 @@ import config from '@/conf/config';
 import { singleton } from 'tsyringe';
 import { defaultsDeep } from 'lodash';
 import { InternalServerError, saveLog } from '@repo/core';
-import { type ISendMailOptions, mailer, twilio } from '../notification';
+import { type ISendMailOptions, mailer, twilio } from '../utils';
 
 @singleton()
 export class NotificationHelper {
-  async email(sendMailOptions: ISendMailOptions) {
+  async onEmail(sendMailOptions: ISendMailOptions) {
     const verify = await mailer.verify();
     // check connection configuration
     if (!verify)
@@ -22,7 +22,7 @@ export class NotificationHelper {
     return await mailer.sendMail(options);
   }
 
-  async phone(to: string, body: string) {
+  async onPhone(to: string, body: string) {
     const from: string = config.get('twilio.from');
 
     const isDev = config.get('isDev');

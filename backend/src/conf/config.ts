@@ -53,7 +53,7 @@ const format = (env: EnvSchema): Record<string, any> => ({
   // otp
   otp: {
     length: 6,
-    expiresIn: '1m', // otp expires in 1 minute
+    expiresIn: '5m', // otp expires in 5 minute
     issuer: env.NAME,
     secret: env.SECRET,
   },

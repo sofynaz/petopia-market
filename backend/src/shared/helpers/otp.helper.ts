@@ -10,7 +10,7 @@ export class OtpHelper {
   }
 
   private get ttl(): string {
-    return ms(config.get('otp.expires'));
+    return ms(config.get('otp.expiresIn'));
   }
 
   private randomOtp(length: number = 4) {

@@ -1,18 +1,14 @@
 import cors from 'cors';
+import chalk from 'chalk';
 import express from 'express';
 import passport from 'passport';
 import config from './conf/config';
-import appRouter from './apps/app.router';
 import useragent from 'express-useragent';
-import {
-  notFound,
-  logHandler,
-  validation,
-  errorHandler,
-} from './shared/middlewares';
+import { apiRouter } from './apis/api.router';
+import { notFound, logHandler, errorHandler } from './shared/middlewares';
 
 export class Express {
-  public app: express.Application;
+  private app: express.Express;
 
   constructor() {
     // create application
@@ -22,7 +18,7 @@ export class Express {
   }
 
   // configure application
-  private config(): void {
+  private config() {
     // Middleware
     this.middleware();
     // Routers
@@ -42,19 +38,21 @@ export class Express {
   }
 
   // Initial Routers
-  private routers(): void {
-    this.app.use('/api', appRouter());
+  private routers() {
+    this.app.use('/api', apiRouter());
+    // 404 Not Found
     this.app.use(notFound);
   }
 
   // Error handling middleware
-  private errorHandlers(): void {
-    this.app.use(validation); // Validation error handler
+  private errorHandlers() {
     this.app.use(errorHandler); // Error handler middleware
   }
 
   // start server
-  public listen(port: number, host: string, callback: () => void): void {
-    this.app.listen(port, host, callback);
+  public listen(port: number, host: string): void {
+    this.app.listen(port, host, () =>
+      console.log(`Listen on ${chalk.cyan(`http://${host}:${port}`)}\n`),
+    );
   }
 }

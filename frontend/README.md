@@ -1,1 +1,1 @@
-# Petopiya-Market frontend with monorepo
+# Frontend App

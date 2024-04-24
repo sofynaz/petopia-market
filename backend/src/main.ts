@@ -1,8 +1,7 @@
 import 'reflect-metadata';
-import chalk from 'chalk';
 import config from './conf/config';
+import { db } from './conf/db.conf';
 import { Express } from './app';
-import { db } from './conf/db.config';
 
 const main = async () => {
   // initialize database
@@ -16,9 +15,7 @@ const main = async () => {
   const host: string = config.get('host');
 
   // Start the server
-  app.listen(port, host, () => {
-    console.log(`Listen on ${chalk.cyan(`http://${host}:${port}`)}\n`);
-  });
+  app.listen(port, host);
 };
 
 main();

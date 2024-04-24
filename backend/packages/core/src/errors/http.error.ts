@@ -1,4 +1,4 @@
-import { isString, isObject } from '../utils/shared.utils';
+import { isString, isObject } from 'lodash';
 import type { BodyMessage, HttpErrorBody } from '../interfaces/error.interface';
 
 /**

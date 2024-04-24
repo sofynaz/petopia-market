@@ -14,7 +14,7 @@ export const Messages = {
   USER_NOT_REGISTER: 'User account is not registered',
   USER_ALREADY_REGISTER: 'User account already registered',
   USER_LOGOUT_SUCCESSFULLY: 'User logout successfully',
-  USER_ALREADY_VERIFIED: 'already verified.',
+  USER_EMAIL_ALREADY_VERIFIED: 'Email already verified.',
   INVALID_CREDENTIALS: 'Invalid credentials',
   INVALID_OTP: 'Given otp invalid.',
   // category

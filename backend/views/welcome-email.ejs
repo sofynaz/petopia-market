@@ -3,9 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome</title>
+    <title>Welcome Email</title>
   </head>
   <body>
-    <h1>This is Welcome Email</h1>
+    <table
+      role="presentation"
+      style="
+        width: 100%;
+        border-collapse: collapse;
+        border: 0px;
+        border-spacing: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(255, 255, 255);
+      "
+    >
+      <tbody>
+        <tr>
+          <td
+            align="center"
+            style="padding: 1rem 2rem; vertical-align: top; width: 100%"
+          >
+            <table
+              role="presentation"
+              style="
+                max-width: 600px;
+                border-collapse: collapse;
+                border: 0px;
+                border-spacing: 0px;
+                text-align: left;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <div style="padding: 20px">
+                      <div style="color: rgb(0, 0, 0); text-align: left">
+                        <h1 style="margin: 1rem 0">Welcome to <%= issuer %></h1>
+                        <p style="padding-bottom: 16px">
+                          Hello <%= username %>,
+                        </p>
+                        <p style="padding-bottom: 16px">
+                          Thank you for signing up to <%= issuer %>. We're
+                          really happy to have you onboard! Click the link below
+                          to login to your account:
+                        </p>
+                        <p style="padding-bottom: 16px">
+                          <a
+                            href="<%= loginUrl %>"
+                            target="_blank"
+                            style="
+                              padding: 12px 24px;
+                              border-radius: 4px;
+                              color: #fff;
+                              background: #2b52f5;
+                              display: inline-block;
+                              margin: 0.5rem 0;
+                            "
+                            >Login to your account</a
+                          >
+                        </p>
+                        <p style="padding-bottom: 16px">Best regards,</p>
+                        <p style="padding-bottom: 16px">
+                          Aashish Panchal<br /><span style="color: #999"
+                            >CEO and Founder</span
+                          ><br /><span style="color: #999"
+                            >The <%= issuer %> team</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

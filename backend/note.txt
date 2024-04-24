@@ -1,0 +1,5 @@
+/auth
+   POST - login
+   POST - register
+   POST - refresh
+   DELETE - logout

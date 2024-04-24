@@ -6,8 +6,9 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@lib/*": ["lib/*"]
     }
   },
-  "include": ["src", "types", "prisma"]
+  "include": ["src", "types"]
 }

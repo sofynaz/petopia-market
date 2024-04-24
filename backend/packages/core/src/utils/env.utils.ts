@@ -1,7 +1,6 @@
 import * as z from 'zod';
 import * as _ from 'lodash';
 import * as dotenv from 'dotenv';
-import { isUndefined } from './shared.utils';
 
 // Define Options type for Config class
 type Options = {
@@ -33,7 +32,7 @@ export class Config {
   get<T>(key: string, defaultValue?: T) {
     const value = _.get(this.storage, key, defaultValue) as T;
 
-    if (isUndefined(value))
+    if (_.isUndefined(value))
       throw new TypeError(`Configuration variable key "${key}" does not exist`);
 
     return value as Exclude<T, undefined>;

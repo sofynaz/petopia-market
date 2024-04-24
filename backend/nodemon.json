@@ -1,5 +1,5 @@
 {
-  "watch": ["src", "config", ".env"],
+  "watch": ["src", "config", ".env", "swagger.yaml"],
   "ext": "ts,json",
   "ignore": ["src/**/*.spec.ts"],
   "execMap": {
