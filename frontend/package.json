@@ -5,12 +5,16 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "build": "turbo build",
-    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
-    "type-check": "turbo type-check"
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
   },
   "devDependencies": {
-    "@repo/tsconfig": "*",
+    "@repo/ts-config": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
     "prettier": "^3.2.5",
     "turbo": "latest"
+  },
+  "packageManager": "pnpm@9.0.6",
+  "engines": {
+    "node": ">=18"
   }
 }

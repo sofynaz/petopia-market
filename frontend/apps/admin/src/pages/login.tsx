@@ -1,3 +1,10 @@
+import { LoginForm } from "@/features/auth";
+
 export default function Login() {
-  return <div>Login</div>;
+  return (
+    <div>
+      <p>Login Now</p>
+      <LoginForm />
+    </div>
+  );
 }

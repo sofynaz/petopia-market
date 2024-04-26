@@ -6,7 +6,7 @@ import "./index.css";
 import { Provider } from "react-redux";
 import { store } from "./app/store.ts";
 // react-query
-import { QueryProvider } from "./utils/react-query.tsx";
+import { QueryProvider } from "./components/react-query.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

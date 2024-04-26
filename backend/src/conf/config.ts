@@ -1,6 +1,8 @@
 import { Config } from '@repo/core';
 import schema, { type EnvSchema } from './schema';
 
+const _package = require('../../package.json');
+
 const format = (env: EnvSchema): Record<string, any> => ({
   name: env.NAME,
   port: env.PORT,
@@ -8,6 +10,12 @@ const format = (env: EnvSchema): Record<string, any> => ({
   secret: env.SECRET,
   nodeEnv: env.NODE_ENV,
   isDev: env.NODE_ENV === 'development',
+  // package
+  package: {
+    version: _package.version,
+    author: _package.author,
+    message: `Welcome to ${env.NAME} RestAPI's`,
+  },
   // database
   db: {
     url: env.DATABASE_URL,

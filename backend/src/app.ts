@@ -39,6 +39,7 @@ export class Express {
 
   // Initial Routers
   private routers() {
+    this.app.get('/', (_, res) => res.json(config.get('package')));
     this.app.use('/api', apiRouter());
     // 404 Not Found
     this.app.use(notFound);

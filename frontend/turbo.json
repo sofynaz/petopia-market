@@ -5,7 +5,6 @@
     "build": {
       "dependsOn": ["^build"]
     },
-    "type-check": {},
     "lint": {
       "dependsOn": ["^lint"]
     },
