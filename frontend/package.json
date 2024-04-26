@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "petopiy-frontend",
   "private": true,
   "scripts": {
     "dev": "turbo dev",
@@ -12,6 +12,5 @@
     "@repo/tsconfig": "*",
     "prettier": "^3.2.5",
     "turbo": "latest"
-  },
-  "packageManager": "pnpm@8.9.0"
+  }
 }
